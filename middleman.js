@@ -144,8 +144,9 @@ var MiddleMan = window.MiddleMan = {
         data: null,
         processData: true
     },
+    ajaxLastModified: {},
     ajax: function(s){
-        s = this.extend(s, jLib.ajaxSettings);
+        s = this.extend(s, this.ajaxSettings);
 
         if(s.data && s.processData && typeof s.data != "string")
             s.data = this.serialize(s.data);
@@ -157,17 +158,29 @@ var MiddleMan = window.MiddleMan = {
 
         var xml = new XMLHttpRequest();
 
-        xml.open(s.type.toUpperCase(), s.url, s.async)
-        if(s.headers){
-            for(var i in s.headers){
-                if(i != "Content-Type"){
-                    xml.setRequestHeader(i, s.headers[i]);
+      	// Open the socket
+       	xml.open(s.type, s.url, s.async, s.username, s.password);
+        try{
+            if(s.headers){
+                for(var i in s.headers){
+                    if(i != "Content-Type"){
+                        xml.setRequestHeader(i, s.headers[i]);
+                    }
                 }
             }
-        }
-        //set the correct header, if data is being sent.
-        if(s.data)
-            xml.setRequestHeader("Content-Type", s.contentType);
+            // Set the If-Modified-Since header, if ifModified mode.
+			if ( s.ifModified )
+				xml.setRequestHeader("If-Modified-Since",
+					jQuery.lastModified[s.url] || "Thu, 01 Jan 1970 00:00:00 GMT" );
+                
+			// Set header so the called script knows that it's an XMLHttpRequest
+			xml.setRequestHeader("X-Requested-With", "XMLHttpRequest");
+
+			// Set the Accepts header for the server, depending on the dataType
+			xml.setRequestHeader("Accept", s.dataType && s.accepts[ s.dataType ] ?
+				s.accepts[ s.dataType ] + ", */*" :
+				s.accepts._default );
+        } catch(e){}
 
         xml.send(s.data);
         var responseState = {
