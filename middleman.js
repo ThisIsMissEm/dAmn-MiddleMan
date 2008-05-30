@@ -730,6 +730,19 @@ var MiddleMan = window.MiddleMan = {
 
 							if (!this.cmds[cmd]) {  dummy = null; }
 							else if( this.cmds[cmd][1] == "MiddleMan") {
+								// This is needed to store the commands in memory
+								if (this.history_pos != -1  && this.history[this.history_pos] == el.value) { // posting from history.. move to the end
+									var before = this.history.slice(0,this.history_pos);
+									var after  = this.history.slice(this.history_pos+1);
+									this.history = before.concat(after).concat( this.history[this.history_pos] );
+								} else {
+									// add to history -- limit to 300
+									this.history = this.history.concat( el.value );
+									if( this.history.length > 300 )
+										this.history = this.history.slice(1);
+								}
+								this.history_pos = -1;
+								
 								if( this.cmds[cmd][0]) {
 									if (args)  MiddleMan.Commands.trigger(cmd,args);
 								} else {
@@ -741,22 +754,8 @@ var MiddleMan = window.MiddleMan = {
 						}
 					}
 				}
-                            // This is needed to store the commands in memory
-			if (this.history_pos != -1  && this.history[this.history_pos] == el.value) { // posting from history.. move to the end
-				var before = this.history.slice(0,this.history_pos);
-				var after  = this.history.slice(this.history_pos+1);
-				this.history = before.concat(after).concat( this.history[this.history_pos] );
-			} else {
-				// add to history -- limit to 300
-				this.history = this.history.concat( el.value );
-				if( this.history.length > 300 )
-					this.history = this.history.slice(1);
-			}
-			this.history_pos = -1;
 
             }
-
-
 
 			return this.onKey_MM(e,kc,force);
 		};
