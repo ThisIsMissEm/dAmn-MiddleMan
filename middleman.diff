@@ -1,0 +1,968 @@
+Index: MiddleManBase62.js
+===================================================================
+--- MiddleManBase62.js	(revision 139)
++++ MiddleManBase62.js	(revision 85)
+@@ -1 +0,0 @@
+-eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('(7(){q 6=5u.6={3w:17,4B:17,1Q:{},1R:{},2H:7(){c.3i();c.3w=1F;c.37(".1P .1J{ 4j:5E; 1f: 2e; 19: 2e; 3B: 25; } "+".1P:3r .1J{ 4j:56; }"+".1P .1J .f{ 1c-4Q: 25; 39: 4G 6b; }"+".1P .1J .f:3r{ 66: 60; 5T-4k: #5G; 4k: #5D !5B; }")},45:7(){q 2N=3T[0]||{};q 2K=3T[1]||c;1a(q 1O W 2N){2K[1O]=2N[1O]}k 2K},X:7(D,N,4){d(c.4B){52("6 4Z 4V: "+N+"("+3b(4)+")\\n"+D)}},38:7(33,M){M=(1o M=="4A")?I.1z(M):M;d(M){M.4u.38(33,M)}},2W:7(2r,4o,1h){1a(q o W 2r){d(1o(2r[o])=="O"){4o(2r[o],o,1h)}}},5F:7(O,1D,4){q y,i=0,R=O.R;d(4){d(R==48){1a(y W O){d(1D.44(O[y],4)===17)C;28}}P 1a(;i<R;){d(1D.44(O[i++],4)===17)C;28}}P{d(R==48){1a(y W O){d(1D.3Q(O[y],y,O[y])===17)C;28}}P 1a(q 14=O[0];i<R&&1D.3Q(14,i,14)!==17;14=O[++i]){28}}k O},5q:7(1m,3L){q 1K=I.1k(\'5k\');1K.1j=1m;1K.3C=3L;I.2E(\'2Y\')[0].1q(1K);k 1K},5e:7(1m,3s){q H=I.1k(\'2C\');H.2A=3s;H.1j=1m;H.5a="57";H.3o="1c/3l";I.2E(\'2Y\')[0].1q(H);k H},37:7(3j){H=I.1z(\'2O\');d(!H){q H=I.1k(\'V\');H.1j="2O";H.3o="1c/3l";I.2E(\'2Y\')[0].1q(H);H=I.1z(\'2O\')}H.1d+=" "+3j;k H},3g:7(1g){d("4A"==1o 1g)1g=I.1z(1g);d(!1g)k 17;18{1g.4u.4W(1g)}1b(D){c.X(D,"6.3g",1g)}},4T:7(4){k 3b(4)},r:{A:{},l:7(w,y,1h){d(c.A[w]){d(c.A[w][y]){1a(q i W c.A[w][y]){1h=c.A[w][y][i](1h)}}}},1T:7(w,G,y,N){d(!c.A[w]){c.A[w]={}}d(!c.A[w][G]){c.A[w][G]={}}d(!c.A[w][G][y]){c.A[w][G][y]=N}},35:7(w,G,y){d(c.A[w]){d(c.A[w][G]){d(c.A[w][G][y]){1t c.A[w][G][y]}d(c.A[w][G].R==0){1t c.A[w][G]}d(c.A[w].R==0){1t c.A[w]}}}},32:7(w,G,y,N){d(c.A[w]&&c.A[w][G]&&c.A[w][G][y]){c.A[w][G][y]=N}P{c.1T(w,G,y,N)}}},1M:{Z:{},1T:7(h,Y,N){Y=Y?1:0;h=h.2w();c.Z[h]=[Y,N];6.2W(J,7(2v,4y,1h){q Y=1h[0];q h=1h[1];2v.2u.M.1L.1x[h]=[Y,\'6\']},[Y,h])},35:7(h){h=h.2w();d(h W c.Z){1t c.Z[h];6.2W(J,7(2v,4y,h){1t 2v.2u.M.1L.1x[h]},h)}},l:7(h,4){h=h.2w();d(h W c.Z){c.Z[h][1](4)}},32:7(h,N,Y){d(c.Z[h]){c.Z[h]=[Y,N]}P{c.1T(h,N,Y)}},4s:7(h){q 4r=c.Z[h][0];k[4r,"6"]}},4q:7(8){8=c.B(8);k J[8]},B:7(8){d(!8)k 5Q;q 1G=8.j("2T:","");1G=1G.j("#","");k"2T:"+1G},5N:7(8){8=6.B(8);d(8 W 6.1Q)k 6.1Q[8];P k 6.4q().5K.1d},5I:7(8){8=6.B(8);d(8 W 6.1R)k 6.1R[8];P k 1E},Q:{4h:7(4){6.r.l("v","4e",\'\')},2Q:7(4){6.r.l("v","5C",\'\')},1Y:7(4){4=6.r.l("v","5A",4)||4;27(4.h){F\'1e\':k c.2h.1e(4)||4;C;F\'1l\':k c.2h.1l(4)||4;C;F\'1r\':k c.2h.1r(4)||4;C;F\'1O\':k c.40(4)||4;C;F\'3Z\':c.3W(4)||4;C}},2I:7(4){6.r.l("v","5t",4)},3S:7(4){6.r.l("v","2H",4)},5s:7(4){6.r.l("v","1L",4)},2L:7(4){6.r.l("v","5r",4)},5p:7(4){6.r.l("v","5o",4)},5n:7(4){k 6.r.l("v","5m",4)||4},40:7(4){4=6.r.l("v","1O",4)||4;27(4.4.p){F"3J":k 6.r.l("2a","3J",4)||4;C;F"3I":k 6.r.l("2a","3I",4)||4;C;F"1p":6.1Q[4.3H]=6.2S(4.2U);k 6.r.l("2a","1p",4)||4;C;F"2o":6.1R[4.3H]=6.2S(4.2U);k 6.r.l("2a","2o",4)||4;C;3D:k 4}},3W:7(4){4=6.r.l("v","3Z",4)||4;q 4t=5i(4.2U);27(4t.h){F"1y":6.r.l("1v","1y",4);C;F"5":6.r.l("1v","5",4);C;F"1l":6.r.l("1v","1l",4);C;F"1r":6.r.l("1v","1r",4);C;F"1e":6.r.l("1v","1e",4);C;F"3x":6.r.l("1v","3x",4);C}},2D:7(4){k 6.r.l("v","5f",4)||4},2h:{1e:7(4){k 6.r.l("24","1e",4)||4},1l:7(4){k 6.r.l("24","1l",4)||4},1r:7(4){k 6.r.l("24","1r",4)||4},3v:7(4){k 6.r.l("24","3v",4)||4}},3u:7(4){4=6.r.l("v","5d",4)||4;27(4.h){F"1y":k 6.r.l("23","1y",4)||4;C;F"5":k 6.r.l("23","5",4)||4;C;F"22":k 6.r.l("23","22",4)||4;C;3D:k 6.r.l("23","5c",4)||4}},2B:7(4){6.r.l("v","5b",\'\')},3q:7(4){6.r.l("v","59",4)}},58:{1y:7(8,5){8=6.B(8);J[8].T("1y","M",5)},3p:7(8,4){8=6.B(8);J[8].T("3p","",4)},3n:7(8,5){8=6.B(8);J[8].T("3n","",5)},3m:7(8,5){8=6.B(8);J[8].T("3m","",5)},3t:7(8,K){8=6.B(8);J[8].T("3t",K,"")},2T:7(K){3k(55(54,K))},4e:7(8){8=6.B(8);J[8].2c()},3h:7(8,K,1S){8=6.B(8);J[8].T("3h",K,1S)},1e:7(8){8=6.B(8);3k(8)},53:7(8,K,12){8=6.B(8);51(8,K,2z(12))},50:7(K,3f,12){4Y(K,3f,12)},5:7(8,5){8=6.B(8);J[8].T("5","M",5)},22:7(8,5){8=6.B(8);J[8].T("22","M",5)},1l:7(8){8=6.B(8);4X(8)},3e:7(8,K,1S){8=6.B(8);J[8].T("3e",K,1S)},1p:7(8,5){8=6.B(8);3d(8,"1p",2z(5))},2o:7(8,5){8=6.B(8);3d(8,"2o",2z(5))},3c:7(8,K){8=6.B(8);J[8].T("3c",K,"")},4U:7(K){4S("4R:"+K,"4P")}},4O:{4N:7(1i,1s,1C,3a){1i=6.B(1i);1C=1C?1C:"";4M(J[1i].2u.M.4L,"4K-4J "+1C,1s,3a)},36:7(){d(2f.34.R>0)2f.4I()},4H:7(31){q L=6.45(31,{1B:"",1f:"2e",19:"2e",4F:1F,1d:""});d(2f.34.R>0)c.36();d(!L.1d)k 17;d(1o(L.1B)=="4E"){L.1B=L.1B.1e(" ")}d("30"==1o L.1f)L.1f=L.1f+"2y";d("30"==1o L.19)L.19=L.19+"2y";E=6a.69(\'<2x V="1f:\'+L.1f+\';19:\'+L.19+\';">\'+\'<4z  68="\'+L.1B+\'" V="z-67:10;19:65%; 64%;39:25;" >\'+L.1d+\'</4z></2x>\',1F);2f.63(E);k 1F},62:7(1m,4w,4v,N){q E=I.1k(\'a\');E.1j=1m;E.61=1m;E.2V=N;E.2s="5Z 1P";E.1d=4w;E.V.3B=4v+"2y";E.V.5Y="25";E.V.5X=E.V.5W="5V";I.1z(\'5U-5S\').1q(E)},5R:7(4n,4m,1w){q 2p=I.1z(4m);q E=I.1k(\'2x\');E.1j=4n;E.2s="4l 4l-5P-5O 1J";q 1A=I.1k(\'2x\');1A.2s="5M 5L-5J";d("O"==1o 1w){1a(q i W 1w){q 1I=I.1k(\'a\');1I.1d=1w[i][0];1I.2s="f";1I.2V=1w[i][1];1A.1q(1I)}}P{1A.1d=1w}E.1q(1A);d(2p){2p.1q(E);2p.2V=""}k E},5H:7(1i,1c){1i=6.B(1i);J[1i].2u.M.1L.4i.14=1c}},2S:7(5){5=5.j(/&b\\t/g,"<b>");5=5.j(/&\\/b\\t/g,"</b>");5=5.j(/&i\\t/g,"<i>");5=5.j(/&\\/i\\t/g,"</i>");5=5.j(/&u\\t/g,"<u>");5=5.j(/&\\/u\\t/g,"</u>");5=5.j(/&s\\t/g,"<s>");5=5.j(/&\\/s\\t/g,"</s>");5=5.j(/&p\\t/g,"<p>");5=5.j(/&\\/p\\t/g,"</p>");5=5.j(/&4g\\t/g,"<4g/>");5=5.j(/&26\\t/g,"<26>");5=5.j(/&\\/26\\t/g,"</26>");5=5.j(/&1W\\t/g,"<1W>");5=5.j(/&\\/1W\\t/g,"</1W>");5=5.j(/&2k\\t/g,"<2k>");5=5.j(/&\\/2k\\t/g,"</2k>");5=5.j(/&2i\\t/g,"<2i>");5=5.j(/&\\/2i\\t/g,"</2i>");5=5.j(/&1U\\t/g,"<1U>");5=5.j(/&\\/1U\\t/g,"</1U>");5=5.j(/&1V\\t/g,"<1V>");5=5.j(/&\\/1V\\t/g,"</1V>");5=5.j(/&2j\\t/g,"<2j>");5=5.j(/&\\/2j\\t/g,"</2j>");5=5.j(/&4d\\t([^\\t])\\t([^\\t]+)\\t/g,\':4d$2:\');5=5.j(/&2C\\t([^\\t]+)\\t&/g,\'$1\');5=5.j(/&2C\\t([^\\t]+)\\t([^\\t]+)\\t&\\t/g,\'$1 \\($2\\)\');5=5.j(/&1X\\t([^\\t]+)\\t/g,\'<1X 1p="$1">\');5=5.j(/&\\/1X\\t/g,"</1X>");5=5.j(/&4b\\t([^\\t]+)\\t/g,\'<4a 1p="$1">\');5=5.j(/&\\/4b\\t/g,"</4a>");5=5.j(/&a\\t([^\\t]+)\\t([^\\t]*)\\t/g,\'<a 2A="$1" 1p="$2">\');5=5.j(/&5z\\t([^\\t]+)\\t([^\\t]+)\\t/g,\':5y$1:\');5=5.j(/&5x\\t([^\\t]+)\\t([^\\t]*)\\t([^\\t]*)\\t/g,\'<5w 3C="$1" />\');5=5.j(/&\\/a\\t/g,"</a>");5=5.j(/&5v\\t([^\\t]+)\\t([^\\t]+)\\t([^\\t]+)\\t([^\\t]+)\\t([^\\t]+)\\t/g,\'$1\');5=5.j(/&47\\t([^\\t]+)\\t([^\\t]*)\\t([^\\t]*)\\t/g,\'<47 2A="$1" 19="$2" 1f="$3" />\');5=5.j(/&43\\t([^\\t]+)\\t([^\\t]+)\\t([^\\t]+)\\t([^\\t]+)\\t([^\\t]+)\\t([^\\t]+)\\t([^\\t]+)\\t/g,\':43$1:\');k 5},3i:7(){42=1Z;1Z=7(16){18{16=6.Q.1Y(16)?6.Q.1Y(16):16;c.41(16)}1b(D){6.X(D,"1Z",16)}};46=2b;2b=7(){18{6.Q.2Q();c.3Y()}1b(D){6.X(D,"2b",\'\')}};3X=29;29=7(15){18{q 2J=6.Q.2D(15);15=2J?2J:15;c.3V(15)}1b(D){6.X(D,"29",15)}};3U=2g;2g=7(12){18{q 2M=6.Q.2I(12);12=2M?2M:12;c.3R(12)}1b(D){6.X(D,"2g",12)}};3M=2n;2n=7(){18{6.Q.2B();c.3P()}1b(D){6.X(D,"2n",16)}};3O=2d;2d=7(h,8,1s){18{q 4={"h":h,"8":8,"1s":1s};4=6.Q.3u(4);c.3N(4.h,4.8,4.1s)}1b(D){6.X(D,"2d",16)}};U.x.4f=U.x.2G;U.x.2G=7(V,2l,1c,20){18{q 4={"V":V,"2l":2l,"1c":1c,"20":20};c.4f(4.V,4.2l,4.1c,4.20)}1b(D){6.X(D,"U.x.2G",4)}};U.x.49=U.x.2c;U.x.2c=7(){18{6.Q.4h();c.49()}1b(D){6.X(D,"U.x.2c",\'\')}};4c=2P;2P=7(1j,15){4c(1j,15);6.Q.3q([1j,15])};3K=2R;2R=7(e,1H,2m){q 2t;6.Q.2L(e,1H,2m);q 1n=c.4i;d(1H!=9){2P(c.21.1G,1F);1t c.5l;d(1H==13&&(2m||!c.3G||e.4D||e.3F)&&1n.14){d(e.4D||(!c.3G&&e.3F)){2t=1E}P{q 1N=1n.14.3E(/^\\/([a-z]+)([\\s\\S]*)/m);d(!1N){2t=1E}P{q h=1N[1].2w();q 4=1E;d(1N[2]){q 2q=1N[2].3E(/^\\s([\\s\\S]*)/);d(2q&&2q.R)4=2q[1]}d(!c.1x[h]){2t=1E}P d(c.1x[h][1]=="6"){d(c.1x[h][0]){d(4)6.1M.l(h,4)}P{6.1M.l(h,17)}1n.14=\'\';1n.5j()}}}}d(c.1u!=-1&&c.11[c.1u]==1n.14){q 4p=c.11.2F(0,c.1u);q 3A=c.11.2F(c.1u+1);c.11=4p.2Z(3A).2Z(c.11[c.1u])}P{c.11=c.11.2Z(1n.14);d(c.11.R>5h)c.11=c.11.2F(1)}c.1u=-1}k c.3z(e,1H,2m)};U.x.3y=U.x.4x;U.x.4x=7(21,y,2X){c.3y(21,y,2X);1a(q h W 6.1M.Z){c.1L.1x[h]=6.1M.4s(h)}5g(7(){6.Q.3S(21,y,2X)},10)};v.x.T=2d;v.x.1Y=1Z;v.x.2Q=2b;v.x.2D=29;4C.x.2L=2R;v.x.2B=2n;v.x.2I=2g;v.x.3N=3O;v.x.41=42;v.x.3Y=46;v.x.3V=3X;4C.x.3z=3K;v.x.3P=3M;v.x.3R=3U}};6.2H()})();',62,384,'||||args|msg|MiddleMan|function|channel||||this|if||||cmd||replace|return|trigger|||||var|Event||||dAmnChat|klass|prototype|name||events|getChannelNs|break|ex|node|case|event|cssObj|document|dAmnChats|user|options|main|fn|object|else|dAmnEvents|length||Send|dAmnChanChat|style|in|errorMsg|params|commands||history|reason||value|real|pkt|false|try|height|for|catch|text|innerHTML|join|width|elementRef|arg|chan|id|createElement|part|elementId|el|typeof|title|appendChild|kicked|str|delete|history_pos|dAmnChat_recv|menuContents|cmds|action|getElementById|inner|classes|spanClass|callback|null|true|ns|kc|menuLink|popup2_MM|scriptObj|input|Commands|cmdre|property|dockrocker_MM|_title|_topic|privclass|bind|sup|code|ul|abbr|onData|dAmnChat_onData|hilite|cr|npmsg|dAmnChat_send|dAmnChat_self|0px|li|switch|continue|dAmnChat_onResize|dAmnChat_property|dAmnChat_onClose|Clear|dAmnChat_Send|auto|Modals|dAmnChat_onDisconnect|onSelf|sub|bcode|ol|from|force|dAmnChat_onShutdown|topic|buttonEl|tmp|obj|className|dummy|channels|chatObj|toLowerCase|div|px|dAmnEscape|href|onShutdown|link|onResize|getElementsByTagName|slice|makeText|init|onDisconnect|_real|target|onKey|_reason|source|MiddleManStyles|dAmnChatTabs_activate|onClose|dAmnChatInput_onKey|parseMsg|chat|body|onclick|objForEach|parent_el|head|concat|number|_options|change|newElement|stack|unbind|closeDialog|appendInlineStyles|insertBefore|padding|timeout|uneval|unban|dAmn_Set|promote|conn|removeElement|demote|updateMethods|styles|dAmn_Join|css|back|away|type|admin|onTabActivate|hover|cssUrl|ban|onSend|killed|loaded|privchg|Init_MM|onKey_MM|after|right|src|default|match|ctrlKey|multiline|param|privclasses|members|dAmnChatInput_onKey_MM|scriptUrl|dAmnChat_onShutdown_MM|Send_MM|dAmnChat_Send_MM|onShutdown_MM|call|onDisconnect_MM|onInit|arguments|dAmnChat_onDisconnect_MM|onResize_MM|onRecv|dAmnChat_onResize_MM|onClose_MM|recv|onProperty|onData_MM|dAmnChat_onData_MM|thumb|apply|extend|dAmnChat_onClose_MM|iframe|undefined|Clear_MM|acronym|acro|dAmnChatTabs_activate_MM|dev|clear|makeText_MM|br|onClear|chatinput_el|display|color|popup2|buttonId|menuId|func|before|getChannel|takesParams|forDAmn|rp|parentNode|pos|html|Init|chatName|form|string|debug|dAmnChatInput|shiftKey|array|autoScroll|2px|openDialog|pop|error|damn|error_el|dAmn_addTimedDiv|chatNotice|Interface|info|indent|login|dAmn_Get|argsToString|whois|occurred|removeChild|dAmn_Part|dAmn_Kill|Error|kill|dAmn_Kick|alert|kick|dAmn_Client_Username|dAmn_format_pchat_ns|block|stylesheet|dAmnSend|tabActivate|rel|shutdown|unhandled|send|appendStylesheet|resize|setTimeout|300|dAmn_ParsePacket|focus|script|tablist|maketext|onMakeText|load|onLoad|appendScript|key|onInputter|disconnect|window|emote|image|img|icon|avatar|data|important|close|2D3733|none|each|AFC81C|setInputText|getChannelTopic|dark|title_el|pager|pager2|getChannelTitle|menu|click|dAmnChatTab_active|addMenu|deviant|background|top|12px|paddingRight|paddingLeft|textIndent|dockrocker|pointer|floater|addDockButton|push|width100|100|cursor|index|class|createFragment|Tree|18px'.split('|'),0,{}))
+\ No newline at end of file
+Index: MiddleManPacked.js
+===================================================================
+--- MiddleManPacked.js	(revision 139)
++++ MiddleManPacked.js	(revision 85)
+@@ -1 +0,0 @@
+-(function(){var MiddleMan=window.MiddleMan={loaded:false,debug:false,_title:{},_topic:{},init:function(){this.updateMethods();this.loaded=true;this.appendInlineStyles(".dockrocker_MM .popup2_MM{ display:none; width: auto; height: auto; right: 0px; } "+".dockrocker_MM:hover .popup2_MM{ display:block; }"+".dockrocker_MM .popup2_MM .f{ text-indent: 0px; padding: 2px 18px; }"+".dockrocker_MM .popup2_MM .f:hover{ cursor: pointer; background-color: #AFC81C; color: #2D3733 !important; }")},extend:function(){var source=arguments[0]||{};var target=arguments[1]||this;for(var property in source){target[property]=source[property]}return target},errorMsg:function(ex,fn,args){if(this.debug){alert("MiddleMan Error occurred: "+fn+"("+uneval(args)+")\n"+ex)}},insertBefore:function(newElement,main){main=(typeof main=="string")?document.getElementById(main):main;if(main){main.parentNode.insertBefore(newElement,main)}},objForEach:function(obj,func,arg){for(var o in obj){if(typeof(obj[o])=="object"){func(obj[o],o,arg)}}},each:function(object,callback,args){var name,i=0,length=object.length;if(args){if(length==undefined){for(name in object){if(callback.apply(object[name],args)===false)break;continue}}else for(;i<length;){if(callback.apply(object[i++],args)===false)break;continue}}else{if(length==undefined){for(name in object){if(callback.call(object[name],name,object[name])===false)break;continue}}else for(var value=object[0];i<length&&callback.call(value,i,value)!==false;value=object[++i]){continue}}return object},appendScript:function(elementId,scriptUrl){var scriptObj=document.createElement('script');scriptObj.id=elementId;scriptObj.src=scriptUrl;document.getElementsByTagName('head')[0].appendChild(scriptObj);return scriptObj},appendStylesheet:function(elementId,cssUrl){var cssObj=document.createElement('link');cssObj.href=cssUrl;cssObj.id=elementId;cssObj.rel="stylesheet";cssObj.type="text/css";document.getElementsByTagName('head')[0].appendChild(cssObj);return cssObj},appendInlineStyles:function(styles){cssObj=document.getElementById('MiddleManStyles');if(!cssObj){var cssObj=document.createElement('style');cssObj.id="MiddleManStyles";cssObj.type="text/css";document.getElementsByTagName('head')[0].appendChild(cssObj);cssObj=document.getElementById('MiddleManStyles')}cssObj.innerHTML+=" "+styles;return cssObj},removeElement:function(elementRef){if("string"==typeof elementRef)elementRef=document.getElementById(elementRef);if(!elementRef)return false;try{elementRef.parentNode.removeChild(elementRef)}catch(ex){this.errorMsg(ex,"MiddleMan.removeElement",elementRef)}},argsToString:function(args){return uneval(args)},Event:{events:{},trigger:function(klass,name,arg){if(this.events[klass]){if(this.events[klass][name]){for(var i in this.events[klass][name]){arg=this.events[klass][name][i](arg)}}}},bind:function(klass,event,name,fn){if(!this.events[klass]){this.events[klass]={}}if(!this.events[klass][event]){this.events[klass][event]={}}if(!this.events[klass][event][name]){this.events[klass][event][name]=fn}},unbind:function(klass,event,name){if(this.events[klass]){if(this.events[klass][event]){if(this.events[klass][event][name]){delete this.events[klass][event][name]}if(this.events[klass][event].length==0){delete this.events[klass][event]}if(this.events[klass].length==0){delete this.events[klass]}}}},change:function(klass,event,name,fn){if(this.events[klass]&&this.events[klass][event]&&this.events[klass][event][name]){this.events[klass][event][name]=fn}else{this.bind(klass,event,name,fn)}}},Commands:{commands:{},bind:function(cmd,params,fn){params=params?1:0;cmd=cmd.toLowerCase();this.commands[cmd]=[params,fn];MiddleMan.objForEach(dAmnChats,function(chatObj,chatName,arg){var params=arg[0];var cmd=arg[1];chatObj.channels.main.input.cmds[cmd]=[params,'MiddleMan']},[params,cmd])},unbind:function(cmd){cmd=cmd.toLowerCase();if(cmd in this.commands){delete this.commands[cmd];MiddleMan.objForEach(dAmnChats,function(chatObj,chatName,cmd){delete chatObj.channels.main.input.cmds[cmd]},cmd)}},trigger:function(cmd,args){cmd=cmd.toLowerCase();if(cmd in this.commands){this.commands[cmd][1](args)}},change:function(cmd,fn,params){if(this.commands[cmd]){this.commands[cmd]=[params,fn]}else{this.bind(cmd,fn,params)}},forDAmn:function(cmd){var takesParams=this.commands[cmd][0];return[takesParams,"MiddleMan"]}},getChannel:function(channel){channel=this.getChannelNs(channel);return dAmnChats[channel]},getChannelNs:function(channel){if(!channel)return dAmnChatTab_active;var ns=channel.replace("chat:","");ns=ns.replace("#","");return"chat:"+ns},getChannelTitle:function(channel){channel=MiddleMan.getChannelNs(channel);if(channel in MiddleMan._title)return MiddleMan._title[channel];else return MiddleMan.getChannel().title_el.innerHTML},getChannelTopic:function(channel){channel=MiddleMan.getChannelNs(channel);if(channel in MiddleMan._topic)return MiddleMan._topic[channel];else return null},dAmnEvents:{onClear:function(args){MiddleMan.Event.trigger("dAmnChat","clear",'')},onClose:function(args){MiddleMan.Event.trigger("dAmnChat","close",'')},onData:function(args){args=MiddleMan.Event.trigger("dAmnChat","data",args)||args;switch(args.cmd){case'join':return this.onSelf.join(args)||args;break;case'part':return this.onSelf.part(args)||args;break;case'kicked':return this.onSelf.kicked(args)||args;break;case'property':return this.onProperty(args)||args;break;case'recv':this.onRecv(args)||args;break}},onDisconnect:function(args){MiddleMan.Event.trigger("dAmnChat","disconnect",args)},onInit:function(args){MiddleMan.Event.trigger("dAmnChat","init",args)},onInputter:function(args){MiddleMan.Event.trigger("dAmnChat","input",args)},onKey:function(args){MiddleMan.Event.trigger("dAmnChat","key",args)},onLoad:function(args){MiddleMan.Event.trigger("dAmnChat","load",args)},onMakeText:function(args){return MiddleMan.Event.trigger("dAmnChat","maketext",args)||args},onProperty:function(args){args=MiddleMan.Event.trigger("dAmnChat","property",args)||args;switch(args.args.p){case"members":return MiddleMan.Event.trigger("dAmnChat_property","members",args)||args;break;case"privclasses":return MiddleMan.Event.trigger("dAmnChat_property","privclasses",args)||args;break;case"title":MiddleMan._title[args.param]=MiddleMan.parseMsg(args.body);return MiddleMan.Event.trigger("dAmnChat_property","title",args)||args;break;case"topic":MiddleMan._topic[args.param]=MiddleMan.parseMsg(args.body);return MiddleMan.Event.trigger("dAmnChat_property","topic",args)||args;break;default:return args}},onRecv:function(args){args=MiddleMan.Event.trigger("dAmnChat","recv",args)||args;var rp=dAmn_ParsePacket(args.body);switch(rp.cmd){case"action":MiddleMan.Event.trigger("dAmnChat_recv","action",args);break;case"msg":MiddleMan.Event.trigger("dAmnChat_recv","msg",args);break;case"part":MiddleMan.Event.trigger("dAmnChat_recv","part",args);break;case"kicked":MiddleMan.Event.trigger("dAmnChat_recv","kicked",args);break;case"join":MiddleMan.Event.trigger("dAmnChat_recv","join",args);break;case"privchg":MiddleMan.Event.trigger("dAmnChat_recv","privchg",args);break}},onResize:function(args){return MiddleMan.Event.trigger("dAmnChat","resize",args)||args},onSelf:{join:function(args){return MiddleMan.Event.trigger("dAmnChat_self","join",args)||args},part:function(args){return MiddleMan.Event.trigger("dAmnChat_self","part",args)||args},kicked:function(args){return MiddleMan.Event.trigger("dAmnChat_self","kicked",args)||args},killed:function(args){return MiddleMan.Event.trigger("dAmnChat_self","killed",args)||args}},onSend:function(args){args=MiddleMan.Event.trigger("dAmnChat","send",args)||args;switch(args.cmd){case"action":return MiddleMan.Event.trigger("dAmnChat_send","action",args)||args;break;case"msg":return MiddleMan.Event.trigger("dAmnChat_send","msg",args)||args;break;case"npmsg":return MiddleMan.Event.trigger("dAmnChat_send","npmsg",args)||args;break;default:return MiddleMan.Event.trigger("dAmnChat_send","unhandled",args)||args}},onShutdown:function(args){MiddleMan.Event.trigger("dAmnChat","shutdown",'')},onTabActivate:function(args){MiddleMan.Event.trigger("dAmnChat","tabActivate",args)}},dAmnSend:{action:function(channel,msg){channel=MiddleMan.getChannelNs(channel);dAmnChats[channel].Send("action","main",msg)},admin:function(channel,args){channel=MiddleMan.getChannelNs(channel);dAmnChats[channel].Send("admin","",args)},away:function(channel,msg){channel=MiddleMan.getChannelNs(channel);dAmnChats[channel].Send("away","",msg)},back:function(channel,msg){channel=MiddleMan.getChannelNs(channel);dAmnChats[channel].Send("back","",msg)},ban:function(channel,user){channel=MiddleMan.getChannelNs(channel);dAmnChats[channel].Send("ban",user,"")},chat:function(user){dAmn_Join(dAmn_format_pchat_ns(dAmn_Client_Username,user))},clear:function(channel){channel=MiddleMan.getChannelNs(channel);dAmnChats[channel].Clear()},demote:function(channel,user,privclass){channel=MiddleMan.getChannelNs(channel);dAmnChats[channel].Send("demote",user,privclass)},join:function(channel){channel=MiddleMan.getChannelNs(channel);dAmn_Join(channel)},kick:function(channel,user,reason){channel=MiddleMan.getChannelNs(channel);dAmn_Kick(channel,user,dAmnEscape(reason))},kill:function(user,conn,reason){dAmn_Kill(user,conn,reason)},msg:function(channel,msg){channel=MiddleMan.getChannelNs(channel);dAmnChats[channel].Send("msg","main",msg)},npmsg:function(channel,msg){channel=MiddleMan.getChannelNs(channel);dAmnChats[channel].Send("npmsg","main",msg)},part:function(channel){channel=MiddleMan.getChannelNs(channel);dAmn_Part(channel)},promote:function(channel,user,privclass){channel=MiddleMan.getChannelNs(channel);dAmnChats[channel].Send("promote",user,privclass)},title:function(channel,msg){channel=MiddleMan.getChannelNs(channel);dAmn_Set(channel,"title",dAmnEscape(msg))},topic:function(channel,msg){channel=MiddleMan.getChannelNs(channel);dAmn_Set(channel,"topic",dAmnEscape(msg))},unban:function(channel,user){channel=MiddleMan.getChannelNs(channel);dAmnChats[channel].Send("unban",user,"")},whois:function(user){dAmn_Get("login:"+user,"info")}},Interface:{chatNotice:function(chan,str,spanClass,timeout){chan=MiddleMan.getChannelNs(chan);spanClass=spanClass?spanClass:"";dAmn_addTimedDiv(dAmnChats[chan].channels.main.error_el,"damn-error "+spanClass,str,timeout)},closeDialog:function(){if(Modals.stack.length>0)Modals.pop()},openDialog:function(_options){var options=MiddleMan.extend(_options,{classes:"",width:"auto",height:"auto",autoScroll:true,innerHTML:""});if(Modals.stack.length>0)this.closeDialog();if(!options.innerHTML)return false;if(typeof(options.classes)=="array"){options.classes=options.classes.join(" ")}if("number"==typeof options.width)options.width=options.width+"px";if("number"==typeof options.height)options.height=options.height+"px";node=Tree.createFragment('<div style="width:'+options.width+';height:'+options.height+';">'+'<form  class="'+options.classes+'" style="z-index:10;height:100%; width100%;padding:0px;" >'+options.innerHTML+'</form></div>',true);Modals.push(node);return true},addDockButton:function(elementId,html,pos,fn){var node=document.createElement('a');node.id=elementId;node.floater=elementId;node.onclick=fn;node.className="dockrocker dockrocker_MM";node.innerHTML=html;node.style.right=pos+"px";node.style.textIndent="0px";node.style.paddingLeft=node.style.paddingRight="12px";document.getElementById('top-deviant').appendChild(node)},addMenu:function(menuId,buttonId,menuContents){var buttonEl=document.getElementById(buttonId);var node=document.createElement('div');node.id=menuId;node.className="popup2 popup2-click-menu popup2_MM";var inner=document.createElement('div');inner.className="pager2 pager-dark";if("object"==typeof menuContents){for(var i in menuContents){var menuLink=document.createElement('a');menuLink.innerHTML=menuContents[i][0];menuLink.className="f";menuLink.onclick=menuContents[i][1];inner.appendChild(menuLink)}}else{inner.innerHTML=menuContents}node.appendChild(inner);if(buttonEl){buttonEl.appendChild(node);buttonEl.onclick=""}return node},setInputText:function(chan,text){chan=MiddleMan.getChannelNs(chan);dAmnChats[chan].channels.main.input.chatinput_el.value=text}},parseMsg:function(msg){msg=msg.replace(/&b\t/g,"<b>");msg=msg.replace(/&\/b\t/g,"</b>");msg=msg.replace(/&i\t/g,"<i>");msg=msg.replace(/&\/i\t/g,"</i>");msg=msg.replace(/&u\t/g,"<u>");msg=msg.replace(/&\/u\t/g,"</u>");msg=msg.replace(/&s\t/g,"<s>");msg=msg.replace(/&\/s\t/g,"</s>");msg=msg.replace(/&p\t/g,"<p>");msg=msg.replace(/&\/p\t/g,"</p>");msg=msg.replace(/&br\t/g,"<br/>");msg=msg.replace(/&li\t/g,"<li>");msg=msg.replace(/&\/li\t/g,"</li>");msg=msg.replace(/&ul\t/g,"<ul>");msg=msg.replace(/&\/ul\t/g,"</ul>");msg=msg.replace(/&ol\t/g,"<ol>");msg=msg.replace(/&\/ol\t/g,"</ol>");msg=msg.replace(/&sub\t/g,"<sub>");msg=msg.replace(/&\/sub\t/g,"</sub>");msg=msg.replace(/&sup\t/g,"<sup>");msg=msg.replace(/&\/sup\t/g,"</sup>");msg=msg.replace(/&code\t/g,"<code>");msg=msg.replace(/&\/code\t/g,"</code>");msg=msg.replace(/&bcode\t/g,"<bcode>");msg=msg.replace(/&\/bcode\t/g,"</bcode>");msg=msg.replace(/&dev\t([^\t])\t([^\t]+)\t/g,':dev$2:');msg=msg.replace(/&link\t([^\t]+)\t&/g,'$1');msg=msg.replace(/&link\t([^\t]+)\t([^\t]+)\t&\t/g,'$1 \($2\)');msg=msg.replace(/&abbr\t([^\t]+)\t/g,'<abbr title="$1">');msg=msg.replace(/&\/abbr\t/g,"</abbr>");msg=msg.replace(/&acro\t([^\t]+)\t/g,'<acronym title="$1">');msg=msg.replace(/&\/acro\t/g,"</acronym>");msg=msg.replace(/&a\t([^\t]+)\t([^\t]*)\t/g,'<a href="$1" title="$2">');msg=msg.replace(/&avatar\t([^\t]+)\t([^\t]+)\t/g,':icon$1:');msg=msg.replace(/&img\t([^\t]+)\t([^\t]*)\t([^\t]*)\t/g,'<image src="$1" />');msg=msg.replace(/&\/a\t/g,"</a>");msg=msg.replace(/&emote\t([^\t]+)\t([^\t]+)\t([^\t]+)\t([^\t]+)\t([^\t]+)\t/g,'$1');msg=msg.replace(/&iframe\t([^\t]+)\t([^\t]*)\t([^\t]*)\t/g,'<iframe href="$1" height="$2" width="$3" />');msg=msg.replace(/&thumb\t([^\t]+)\t([^\t]+)\t([^\t]+)\t([^\t]+)\t([^\t]+)\t([^\t]+)\t([^\t]+)\t/g,':thumb$1:');return msg},updateMethods:function(){dAmnChat_onData_MM=dAmnChat_onData;dAmnChat_onData=function(pkt){try{pkt=MiddleMan.dAmnEvents.onData(pkt)?MiddleMan.dAmnEvents.onData(pkt):pkt;this.onData_MM(pkt)}catch(ex){MiddleMan.errorMsg(ex,"dAmnChat_onData",pkt)}};dAmnChat_onClose_MM=dAmnChat_onClose;dAmnChat_onClose=function(){try{MiddleMan.dAmnEvents.onClose();this.onClose_MM()}catch(ex){MiddleMan.errorMsg(ex,"dAmnChat_onClose",'')}};dAmnChat_onResize_MM=dAmnChat_onResize;dAmnChat_onResize=function(real){try{var _real=MiddleMan.dAmnEvents.onResize(real);real=_real?_real:real;this.onResize_MM(real)}catch(ex){MiddleMan.errorMsg(ex,"dAmnChat_onResize",real)}};dAmnChat_onDisconnect_MM=dAmnChat_onDisconnect;dAmnChat_onDisconnect=function(reason){try{var _reason=MiddleMan.dAmnEvents.onDisconnect(reason);reason=_reason?_reason:reason;this.onDisconnect_MM(reason)}catch(ex){MiddleMan.errorMsg(ex,"dAmnChat_onDisconnect",reason)}};dAmnChat_onShutdown_MM=dAmnChat_onShutdown;dAmnChat_onShutdown=function(){try{MiddleMan.dAmnEvents.onShutdown();this.onShutdown_MM()}catch(ex){MiddleMan.errorMsg(ex,"dAmnChat_onShutdown",pkt)}};dAmnChat_Send_MM=dAmnChat_Send;dAmnChat_Send=function(cmd,channel,str){try{var args={"cmd":cmd,"channel":channel,"str":str};args=MiddleMan.dAmnEvents.onSend(args);this.Send_MM(args.cmd,args.channel,args.str)}catch(ex){MiddleMan.errorMsg(ex,"dAmnChat_Send",pkt)}};dAmnChanChat.prototype.makeText_MM=dAmnChanChat.prototype.makeText;dAmnChanChat.prototype.makeText=function(style,from,text,hilite){try{var args={"style":style,"from":from,"text":text,"hilite":hilite};this.makeText_MM(args.style,args.from,args.text,args.hilite)}catch(ex){MiddleMan.errorMsg(ex,"dAmnChanChat.prototype.makeText",args)}};dAmnChanChat.prototype.Clear_MM=dAmnChanChat.prototype.Clear;dAmnChanChat.prototype.Clear=function(){try{MiddleMan.dAmnEvents.onClear();this.Clear_MM()}catch(ex){MiddleMan.errorMsg(ex,"dAmnChanChat.prototype.Clear",'')}};dAmnChatTabs_activate_MM=dAmnChatTabs_activate;dAmnChatTabs_activate=function(id,real){dAmnChatTabs_activate_MM(id,real);MiddleMan.dAmnEvents.onTabActivate([id,real])};dAmnChatInput_onKey_MM=dAmnChatInput_onKey;dAmnChatInput_onKey=function(e,kc,force){var dummy;MiddleMan.dAmnEvents.onKey(e,kc,force);var el=this.chatinput_el;if(kc!=9){dAmnChatTabs_activate(this.cr.ns,true);delete this.tablist;if(kc==13&&(force||!this.multiline||e.shiftKey||e.ctrlKey)&&el.value){if(e.shiftKey||(!this.multiline&&e.ctrlKey)){dummy=null}else{var cmdre=el.value.match(/^\/([a-z]+)([\s\S]*)/m);if(!cmdre){dummy=null}else{var cmd=cmdre[1].toLowerCase();var args=null;if(cmdre[2]){var tmp=cmdre[2].match(/^\s([\s\S]*)/);if(tmp&&tmp.length)args=tmp[1]}if(!this.cmds[cmd]){dummy=null}else if(this.cmds[cmd][1]=="MiddleMan"){if(this.cmds[cmd][0]){if(args)MiddleMan.Commands.trigger(cmd,args)}else{MiddleMan.Commands.trigger(cmd,false)}el.value='';el.focus()}}}}if(this.history_pos!=-1&&this.history[this.history_pos]==el.value){var before=this.history.slice(0,this.history_pos);var after=this.history.slice(this.history_pos+1);this.history=before.concat(after).concat(this.history[this.history_pos])}else{this.history=this.history.concat(el.value);if(this.history.length>300)this.history=this.history.slice(1)}this.history_pos=-1}return this.onKey_MM(e,kc,force)};dAmnChanChat.prototype.Init_MM=dAmnChanChat.prototype.Init;dAmnChanChat.prototype.Init=function(cr,name,parent_el){this.Init_MM(cr,name,parent_el);for(var cmd in MiddleMan.Commands.commands){this.input.cmds[cmd]=MiddleMan.Commands.forDAmn(cmd)}setTimeout(function(){MiddleMan.dAmnEvents.onInit(cr,name,parent_el)},10)};dAmnChat.prototype.Send=dAmnChat_Send;dAmnChat.prototype.onData=dAmnChat_onData;dAmnChat.prototype.onClose=dAmnChat_onClose;dAmnChat.prototype.onResize=dAmnChat_onResize;dAmnChatInput.prototype.onKey=dAmnChatInput_onKey;dAmnChat.prototype.onShutdown=dAmnChat_onShutdown;dAmnChat.prototype.onDisconnect=dAmnChat_onDisconnect;dAmnChat.prototype.Send_MM=dAmnChat_Send_MM;dAmnChat.prototype.onData_MM=dAmnChat_onData_MM;dAmnChat.prototype.onClose_MM=dAmnChat_onClose_MM;dAmnChat.prototype.onResize_MM=dAmnChat_onResize_MM;dAmnChatInput.prototype.onKey_MM=dAmnChatInput_onKey_MM;dAmnChat.prototype.onShutdown_MM=dAmnChat_onShutdown_MM;dAmnChat.prototype.onDisconnect_MM=dAmnChat_onDisconnect_MM}};MiddleMan.init()})();
+\ No newline at end of file
+Index: middleman.js
+===================================================================
+--- middleman.js	(revision 139)
++++ middleman.js	(revision 85)
+@@ -1,797 +1,173 @@
+-/***
+- *
+- *  MiddleMan
+- *
+- ***
+- *
+- *  $Revision$
+- *  $Author$
+- *  $Date$
+- *
+-***/
++// Intro
++(function(){
++
++// Over-right
++if ( window.Event )
++	var _Event = window.Event;
+ 
+-//with(unsafeWindow){  //(This returned an error for me anyway, so I commented out for now. Apparently unsafeWindow does not exist?)
++if ( window.MiddleMan )
++	var _MiddleMan = window.MiddleMan;
+ 
+-// Intro
+-(function(){
+ 
+ /*===================================================*
+  *                                                   *
+- *    MiddleMan                                     *
++ *    Event Model                                    *
+  *                                                   *
+-**==================================================*/
++ *                                                   *
++ *  USAGE:                                           *
++ *                                                   *
++ *  Event.bind(class, event, name, function);        *
++ *                                                   *
++ *    This binds an event function to the system     *
++ *                                                   *
++ *  Event.unbind(class, event, name);                *
++ *                                                   *
++ *    This unbinds an event function from the        *
++ *    system                                         *
++ *                                                   *
++ *  Event.change(class, event, name, function);      *
++ *                                                   *
++ *    This changes the function run                  *
++ *                                                   *
++ *  Event.trigger(class, event, [args]);             *
++ *                                                   *
++ *    This calls all the functions registered to the *
++ *    event in the order registered.                 *
++ *                                                   *
++**===================================================*/
+ 
+-var MiddleMan = window.MiddleMan = {
+-    loaded: false,
+-    debug: false,
+-    _title: {},
+-    _topic: {},
+-    init: function(){
+-		this.updateMethods();
+-		this.loaded = true;
+-		
+-		this.appendInlineStyles(  ".dockrocker_MM .popup2_MM{ display:none; width: auto; height: auto; right: 0px; } "
+-								+ ".dockrocker_MM:hover .popup2_MM{ display:block; }"
+-								+ ".dockrocker_MM .popup2_MM .f{ text-indent: 0px; padding: 2px 18px; }"
+-								+ ".dockrocker_MM .popup2_MM .f:hover{ cursor: pointer; background-color: #AFC81C; color: #2D3733 !important; }");
+-	},
+ 
+-   	extend: function(){
+-        var source = arguments[0] || {};
+-        var target = arguments[1] || this;
++var Event =  window.Event = {
++  events: {
++    // storage var.
++  },
+ 
+-        for (var property in source){
+-            target[property] = source[property];
++  trigger: function(klass, name, arg){
++    if(this.events[klass]){
++      if(this.events[klass][name]){
++        for(var i in this.events[klass][name]){
++          this.events[klass][name][i](arg);
++        }
++      }
++    }
++  },
++  bind: function(klass, event, name, fn){
++    if(!this.events[klass]){
++      this.events[klass] = {};
++      if(!this.events[klass][event]){
++        this.events[klass][event] = {};
++      }
++      if(!this.events[klass][event][name]){
++        this.events[klass][event][name] = fn;
++      }
++    }
++  },
++  unbind: function(klass, event, name){
++    if(this.events[klass]){
++      if(this.events[klass][event]){
++        if(this.events[klass][event][name]){
++          delete this.events[klass][event][name]
++        }
++        if(this.events[klass][event].length == 0){
++          delete this.events[klass][event];
++        }
++        if(this.events[klass].length == 0){
++          delete this.events[klass];
+         }
+-        return target;
+-    },
+-    errorMsg:function(ex,fn,args){
+-   		if(this.debug){
+-   			alert("MiddleMan Error occurred: "+fn+"("+uneval(args)+")\n"+ex);
+-   		}
+-   	},
+-	insertBefore: function(newElement,main){
+-		main = (typeof main == "string")?document.getElementById(main):main;
+-		if (main) {
+-			main.parentNode.insertBefore(newElement, main);
+-		}
+-	},
+-    objForEach: function(obj,func,arg){
+-   		for (var o in obj) {
+-			if (typeof(obj[o]) == "object") {
+-				func(obj[o],o,arg);
+-			}
+-		}
+-   	},
+-    // KEEP!!!
+-    each: function( object, callback, args ) {
+-		var name, i = 0, length = object.length;
++      }
++    }
++  },
++  change: function(klass, event, name, fn){
++    if(this.events[klass] && this.events[klass][event] && this.events[klass][event][name]){
++      this.events[klass][event][name] = fn;
++    }else{
++      this.bind(klass, event, name, fn);
++    }
++  }
+ 
+-		if ( args ) {
+-			if ( length == undefined ) {
+-				for ( name in object ){
+-					if ( callback.apply( object[ name ], args ) === false )
+-						break;
+-					continue;}
+-			} else
+-				for ( ; i < length; ){
+-					if ( callback.apply( object[ i++ ], args ) === false )
+-						break;
+-					continue;}
++};
+ 
+-		// A special, fast, case for the most common use of each
+-		} else {
+-			if ( length == undefined ) {
+-				for ( name in object ){
+-					if ( callback.call( object[ name ], name, object[ name ] ) === false )
+-						break;
+-					continue;}
+-			} else
+-				for ( var value = object[0];
+-					i < length && callback.call( value, i, value ) !== false; value = object[++i] ){ continue; }
+-		}
+ 
+-		return object;
+-	},
+ 
+-
+-
+-	appendScript: function(elementId, scriptUrl){
+-    	var scriptObj 	= document.createElement('script');
+-    	scriptObj.id 	= elementId;
+-		scriptObj.src 	= scriptUrl;
+-		document.getElementsByTagName('head')[0].appendChild(scriptObj);
+-		return scriptObj;
+-    },
+-    appendStylesheet: function(elementId, cssUrl){
+-    	var cssObj 	= document.createElement('link');
+-		cssObj.href = cssUrl;
+-		cssObj.id 	= elementId;
+-		cssObj.rel 	= "stylesheet";
+-		cssObj.type = "text/css";
+-		document.getElementsByTagName('head')[0].appendChild(cssObj);
+-		return cssObj;
+-    },
+-    appendInlineStyles: function(styles){
+-    	cssObj = document.getElementById('MiddleManStyles');
+-    	if(!cssObj){
+-			var cssObj 	= document.createElement('style');
+-			cssObj.id 	= "MiddleManStyles";
+-			cssObj.type = "text/css";
+-			document.getElementsByTagName('head')[0].appendChild(cssObj);
+-			cssObj 		= document.getElementById('MiddleManStyles');
+-		}
+-		cssObj.innerHTML += " "+styles;
+-		return cssObj;
+-    },
+-    removeElement: function(elementRef){
+-    	if("string" == typeof elementRef) elementRef = document.getElementById(elementRef);
+-    	if(!elementRef) return false;
+-		try{ elementRef.parentNode.removeChild(elementRef); }catch(ex){ this.errorMsg(ex,"MiddleMan.removeElement",elementRef); }
+-    },
+-
+-
+-    argsToString: function(args){
+-    	return uneval(args);
+-    },
++/*===================================================*
++ *                                                   *
++ *    MiddleMan                                      *
++ *                                                   *
++**==================================================*/
+ 
+-
+-
+-    Event: {
+-	  events: {
+-		// storage var.
+-	  },
+-	  trigger: function(klass, name, arg){
+-		if(this.events[klass]){
+-		  if(this.events[klass][name]){
+-			for(var i in this.events[klass][name]){
+-			  arg = this.events[klass][name][i](arg);
+-			}
+-		  }
+-		}
+-	  },
+-	  bind: function(klass, event, name, fn){
+-		if(!this.events[klass]){
+-			this.events[klass] = {};
+-		}
+-		if(!this.events[klass][event]){
+-			this.events[klass][event] = {};
+-		}
+-		if(!this.events[klass][event][name]){
+-			this.events[klass][event][name] = fn;
+-		}
+-	  },
+-	  unbind: function(klass, event, name){
+-		if(this.events[klass]){
+-		  if(this.events[klass][event]){
+-			if(this.events[klass][event][name]){
+-			  delete this.events[klass][event][name];
+-			}
+-			if(this.events[klass][event].length == 0){
+-			  delete this.events[klass][event];
+-			}
+-			if(this.events[klass].length == 0){
+-			  delete this.events[klass];
+-			}
+-		  }
+-		}
+-	  },
+-	  change: function(klass, event, name, fn){
+-		if(this.events[klass] && this.events[klass][event] && this.events[klass][event][name]){
+-		  this.events[klass][event][name] = fn;
+-		}else{
+-		  this.bind(klass, event, name, fn);
+-		}
+-	  }
+-
+-	},
+-
+-   	Commands:{
+-   		commands: {},
+-   		bind: function(cmd, params, fn){
+- 			params = params ? 1 : 0;
+-   			cmd = cmd.toLowerCase();
+-
+-   			this.commands[cmd] = [params,fn];
+-
+-            MiddleMan.objForEach(dAmnChats, function(chatObj,chatName,arg){
+-                var params = arg[0];
+-                var cmd = arg[1];
+-                chatObj.channels.main.input.cmds[cmd] = [params,'MiddleMan'];
+-            }, [params,cmd]);
+-   		},
+-   		unbind: function(cmd){
+-   			cmd = cmd.toLowerCase();
+-   			if(cmd in this.commands){
+-   				delete this.commands[cmd];
+-
+-   				MiddleMan.objForEach(dAmnChats, function(chatObj,chatName,cmd){
+-						delete chatObj.channels.main.input.cmds[cmd];
+-				}, cmd);
+-   			}
+-   		},
+-   		trigger: function(cmd, args){
+-   			cmd = cmd.toLowerCase();
+-   			if(cmd in this.commands){
+-   				this.commands[cmd][1](args);
+-   			}
+-   		},
+-        change: function(cmd, fn, params){
+-            if(this.commands[cmd]){
+-                this.commands[cmd] = [params, fn];
+-            }else{
+-                this.bind(cmd, fn, params);
+-            }
+-        },
+-   		forDAmn: function(cmd){
+-   			var takesParams = this.commands[cmd][0];
+-   			return [takesParams,"MiddleMan"];
+-   		}
+-   	},
+-
+-    getChannel: function(channel){
+-    	channel = this.getChannelNs(channel);
+-    	return dAmnChats[channel];
+-    },
+-    getChannelNs: function(channel){
+-    	if(!channel) return dAmnChatTab_active;
+-    	var ns = channel.replace("chat:","");
+-    		ns = ns.replace("#","");
+-    	return "chat:"+ns;
+-    },
+-    getChannelTitle: function(channel){
+-    	channel = MiddleMan.getChannelNs(channel);
+-    	if(channel in MiddleMan._title)
+-    		 return MiddleMan._title[channel];
+-    	else return MiddleMan.getChannel().title_el.innerHTML;
+-    },
+-    getChannelTopic: function(channel){
+-    	channel = MiddleMan.getChannelNs(channel);
+-    	if(channel in MiddleMan._topic)
+-    		 return MiddleMan._topic[channel];
+-    	else return null;
+-    },
+-
+-   	dAmnEvents: {
+-   		onClear: function(args){
+-            MiddleMan.Event.trigger("dAmnChat", "clear", '');
+-        },
+-        onClose: function(args){
+-            MiddleMan.Event.trigger("dAmnChat", "close", '');
+-        },
+-   		onData: function(args){
+-            args = MiddleMan.Event.trigger("dAmnChat", "data", args) || args;
+-            // Further processing:
+-			switch (args.cmd) {
+-				case 'join':
+-					return this.onSelf.join(args) 	|| args;
+-					break;
+-				case 'part':
+-					return this.onSelf.part(args) 	|| args;
+-					break;
+-				case 'kicked':
+-					return this.onSelf.kicked(args) || args;
+-					break;
+-				case 'property':
+-					return this.onProperty(args) 	|| args;
+-					break;
+-				case 'recv':
+-					this.onRecv(args) 				|| args;
+-					break;
+-			}
+-        },
+-        onDisconnect: function(args){
+-            MiddleMan.Event.trigger("dAmnChat", "disconnect", 	args);
+-        },
++var MiddleMan = window.MiddleMan = {
++    Channels: new Array(),
++    Interface: new Array(),
++    dAmnChat: {
+         onInit: function(args){
+-            MiddleMan.Event.trigger("dAmnChat", "init", 	args);
+-        },
+-        onInputter: function(args){
+-            MiddleMan.Event.trigger("dAmnChat", "input", 	args);
+-        },
+-        onKey: function(args){
+-            MiddleMan.Event.trigger("dAmnChat", "key", 		args);
++            Event.trigger("dAmnChat", "init", args);
+         },
+         onLoad: function(args){
+-            MiddleMan.Event.trigger("dAmnChat", "load", 	args);
++            Event.trigger("dAmnChat", "load", args);
+         },
+-        onMakeText: function(args){
+-        	return MiddleMan.Event.trigger("dAmnChat", "maketext", args) || args;
++        onResize: function(args){
++            Event.trigger("dAmnChat", "resize", args);
+         },
+-        onProperty: function(args){
+-            args = MiddleMan.Event.trigger("dAmnChat", "property", args) || args;
+-            // Further processing:
+-            switch (args.args.p) {
+-				case "members":
+-					return MiddleMan.Event.trigger("dAmnChat_property", "members", 	 	args)	|| args;
+-					break;
+-				case "privclasses":
+-					return MiddleMan.Event.trigger("dAmnChat_property", "privclasses", 	args) 	|| args;
+-					break;
+-				case "title":
+-					MiddleMan._title[args.param] = MiddleMan.parseMsg(args.body);
+-					return MiddleMan.Event.trigger("dAmnChat_property", "title", 		args)	|| args;
+-					break;
+-				case "topic":
+-					MiddleMan._topic[args.param] = MiddleMan.parseMsg(args.body);
+-					return MiddleMan.Event.trigger("dAmnChat_property", "topic", 		args)	|| args;
+-					break;
+-				default:
+-                    return args;
+-			}
++
++        onSend: function(args){
++            Event.trigger("dAmnChat", "send", args);
++            // further processing:
++            switch(args.type){
++                case "action":
++                    Event.trigger("dAmnChat_send", "action", args);
++                    break;
++                case "msg":
++                    Event.trigger("dAmnChat_send", "msg", args);
++                    break;
++                case "npmsg":
++                    Event.trigger("dAmnChat_send", "npmsg", args);
++                    break;
++                default:
++                    Event.trigger("dAmnChat_send", "unhandled", args);
++            }
+         },
+         onRecv: function(args){
+-            args = MiddleMan.Event.trigger("dAmnChat", "recv", args) || args;
+-            // Further processing:
+-            var rp = dAmn_ParsePacket(args.body);
+-			switch (rp.cmd) {
+-				case "action":
+-					MiddleMan.Event.trigger("dAmnChat_recv", 	"action", 	args);
+-					break;
+-				case "msg":
+-					MiddleMan.Event.trigger("dAmnChat_recv", 	"msg", 		args);
+-					break;
+-				case "part":
+-					MiddleMan.Event.trigger("dAmnChat_recv", 	"part", 	args);
+-					break;
+-				case "kicked":
+-					MiddleMan.Event.trigger("dAmnChat_recv", 	"kicked", 	args);
+-					break;
+-				case "join":
+-					MiddleMan.Event.trigger("dAmnChat_recv", 	"join", 	args);
+-					break;
+-				case "privchg":
+-					MiddleMan.Event.trigger("dAmnChat_recv", 	"privchg", 	args);
+-					break;
+-			}
++            Event.trigger("dAmnChat", "recv", args);
++            // Same as onSend(*);
+         },
+-        onResize: function(args){
+-            return MiddleMan.Event.trigger("dAmnChat", "resize", args) || args;
++        onData: function(args){
++            Event.trigger("dAmnChat", "data", args);
++            // Same as onSend(*);
+         },
++
+         onSelf: {
+-            join: 	function(args){
+-                	return MiddleMan.Event.trigger("dAmnChat_self", "join",   args) || args;
++            join: function(args){
++                Event.trigger("dAmnChat_self", "join", args);
+             },
+-            part: 	function(args){
+-                	return MiddleMan.Event.trigger("dAmnChat_self", "part",   args) || args;
++            part: function(args){
++                Event.trigger("dAmnChat_self", "part", args);
+             },
+             kicked: function(args){
+-                	return MiddleMan.Event.trigger("dAmnChat_self", "kicked", args) || args;
++                Event.trigger("dAmnChat_self", "kicked", args);
+             },
+             killed: function(args){
+-                	return MiddleMan.Event.trigger("dAmnChat_self", "killed", args) || args;
++                Event.trigger("dAmnChat_self", "killed", args);
+             }
+         },
+-        onSend: function(args){
+-            args = MiddleMan.Event.trigger("dAmnChat", "send", args) || args;
+-            // Further processing:
+-            switch(args.cmd){
+-                case "action":
+-                    return MiddleMan.Event.trigger("dAmnChat_send", "action", 	 args) || args;
+-                    break;
+-                case "msg":
+-                    return MiddleMan.Event.trigger("dAmnChat_send", "msg", 		 args) || args;
+-                    break;
+-                case "npmsg":
+-                    return MiddleMan.Event.trigger("dAmnChat_send", "npmsg", 	 args) || args;
+-                    break;
+-                default:
+-                    return MiddleMan.Event.trigger("dAmnChat_send", "unhandled", args) || args;
+-            }
++        onProperty: function(args){
++            Event.trigger("dAmnChat", "property", args);
++            // Same as onSend(*);
++        },
++
++        onClose: function(args){
++            Event.trigger("dAmnChat", "close", args);
++        },
++        onDisconnect: function(args){
++            Event.trigger("dAmnChat", "disconnect", args);
+         },
+         onShutdown: function(args){
+-            MiddleMan.Event.trigger("dAmnChat", "shutdown", '');
++            Event.trigger("dAmnChat", "shutdown", args);
+         },
+-        onTabActivate: function(args){
+-        	MiddleMan.Event.trigger("dAmnChat", "tabActivate", args);
++        onInputter: function(args){
++            Event.trigger("dAmnChat", "input", args);
+         }
+-	},
+-   	dAmnSend: {
+-    	action: function(channel, msg){
+-    		channel = MiddleMan.getChannelNs(channel);
+-    		dAmnChats[channel].Send( "action","main", msg );
+-    	},
+-    	admin: function(channel, args){
+-    		channel = MiddleMan.getChannelNs(channel);
+-    		dAmnChats[channel].Send( "admin", "", args );
+-    	},
+-    	away: function(channel, msg){
+-    		// Note: Not currently enabled by dAmn
+-    		channel = MiddleMan.getChannelNs(channel);
+-    		dAmnChats[channel].Send( "away", "", msg );
+-    	},
+-    	back: function(channel, msg){
+-    		// Note: Not currently enabled by dAmn
+-    		channel = MiddleMan.getChannelNs(channel);
+-    		dAmnChats[channel].Send( "back", "", msg );
+-    	},
+-    	ban: function(channel, user){
+-    		channel = MiddleMan.getChannelNs(channel);
+-    		dAmnChats[channel].Send( "ban", user, "" );
+-    	},
+-    	chat: function(user){
+-    		// Note: Not currently enabled by dAmn
+-    		dAmn_Join( dAmn_format_pchat_ns(dAmn_Client_Username, user) );
+-    	},
+-    	clear: function(channel){
+-    		channel = MiddleMan.getChannelNs(channel);
+-    		dAmnChats[channel].Clear();
+-    	},
+-    	demote: function(channel, user, privclass){
+-    		channel = MiddleMan.getChannelNs(channel);
+-    		dAmnChats[channel].Send("demote",user,privclass);
+-    	},
+-    	join: function(channel){
+-    		channel = MiddleMan.getChannelNs(channel);
+-			dAmn_Join( channel );
+-    	},
+-    	kick: function(channel, user, reason){
+-    		channel = MiddleMan.getChannelNs(channel);
+-    		dAmn_Kick( channel, user, dAmnEscape(reason) );
+-    	},
+-    	kill: function(user, conn, reason){
+-    		dAmn_Kill( user, conn, reason );
+-    	},
+-    	msg: function(channel, msg){
+-    		channel = MiddleMan.getChannelNs(channel);
+-    		dAmnChats[channel].Send( "msg","main", msg );
+-    	},
+-    	npmsg: function(channel, msg){
+-    		channel = MiddleMan.getChannelNs(channel);
+-    		dAmnChats[channel].Send( "npmsg","main", msg );
+-    	},
+-    	part: function(channel){
+-    		channel = MiddleMan.getChannelNs(channel);
+-    		dAmn_Part( channel );
+-    	},
+-    	promote: function(channel, user, privclass){
+-    		channel = MiddleMan.getChannelNs(channel);
+-    		dAmnChats[channel].Send("promote",user,privclass);
+-    	},
+-    	title: function(channel, msg){
+-    		channel = MiddleMan.getChannelNs(channel);
+-    		dAmn_Set( channel, "title", dAmnEscape(msg) );
+-    	},
+-    	topic: function(channel, msg){
+-    		channel = MiddleMan.getChannelNs(channel);
+-    		dAmn_Set( channel, "topic", dAmnEscape(msg) );
+-    	},
+-    	unban: function(channel, user){
+-    		channel = MiddleMan.getChannelNs(channel);
+-    		dAmnChats[channel].Send( "unban", user, "" );
+-    	},
+-    	whois: function(user){
+-    		dAmn_Get( "login:"+user, "info" );
+-    	}
+-    },
+-   	Interface: {
+-    	chatNotice: function(chan, str, spanClass, timeout){
+-    		chan 		= MiddleMan.getChannelNs(chan);
+-    		spanClass 	= spanClass?spanClass:"";
+-    		dAmn_addTimedDiv( dAmnChats[chan].channels.main.error_el, "damn-error "+spanClass, str, timeout );
+-    	},
+-    	closeDialog: function(){
+-    		if(Modals.stack.length>0) Modals.pop();
+-    	},
+-    	openDialog: function(_options){
+-            var options = MiddleMan.extend(_options, {
+-                classes: 	""	  ,
+-                width: 		"auto",
+-                height: 	"auto",
+-                autoScroll: true  ,
+-                innerHTML: 	""
+-            });
+-
+-            // close existing..
+-    		if(Modals.stack.length>0) this.closeDialog();
+-            if(!options.innerHTML	) return false;
+-
+-            if(typeof(options.classes) == "array"){
+-                options.classes = options.classes.join(" ");
+-            }
+-
+-    		if("number" == typeof options.width)
+-                options.width = options.width+"px";
+-    		if("number" == typeof options.height)
+-                options.height = options.height+"px";
+-
+-    		node = Tree.createFragment(
+-				  '<div style="width:'+options.width+';height:'+options.height+';">'
+-				+ '<form  class="'+options.classes+'" style="z-index:10;height:100%; width100%;padding:0px;" >'
+-				+ options.innerHTML
+-				+ '</form></div>'
+-			, true);
+-
+-			Modals.push(node);
+-            return true;
+-    	},
+-    	addDockButton: function(elementId, html, pos, fn){
+-    		var node 	 = document.createElement('a');
+-    		node.id 	 = elementId;
+-    		node.floater = elementId;
+-    		node.onclick = fn;
+-    		node.className 	 = "dockrocker dockrocker_MM";
+-    		node.innerHTML 	 = html;
+-    		node.style.right = pos+"px";
+-    		node.style.textIndent = "0px";
+-    		node.style.paddingLeft = node.style.paddingRight = "12px";
+-    		
+-    		document.getElementById('top-deviant').appendChild(node);
+-    	},
+-    	addMenu: function(menuId,buttonId,menuContents){
+-    		var buttonEl 	 = document.getElementById(buttonId);
+-    		var node 	 	 = document.createElement('div');
+-    		node.id 	 	 = menuId;
+-    		node.className 	 = "popup2 popup2-click-menu popup2_MM";
+-    		
+-    		var inner		 = document.createElement('div');
+-    		inner.className  = "pager2 pager-dark";
+-    		
+-    		if("object" == typeof menuContents){
+-				for(var i in menuContents){
+-					var menuLink 		= document.createElement('a');
+-					menuLink.innerHTML  = menuContents[i][0];
+-					menuLink.className  = "f";
+-					menuLink.onclick 	= menuContents[i][1];
+-					inner.appendChild(menuLink);
+-				}
+-    		}else{
+-    			inner.innerHTML = menuContents;
+-    		}
+-    		
+-    		node.appendChild(inner);
+-    		
+-    		if(buttonEl){
+-    			buttonEl.appendChild(node);
+-    			buttonEl.onclick = "";
+-    		}
+-    		return node;
+-    	},
+-    	setInputText: function(chan, text){
+-    		chan = MiddleMan.getChannelNs(chan);
+-    		dAmnChats[chan].channels.main.input.chatinput_el.value = text;
+-    	}
+-    },
+-   	parseMsg: function(msg)
+-    {
+-        // bold
+-			msg = msg.replace(/&b\t/g,	"<b>" );
+-			msg = msg.replace(/&\/b\t/g,"</b>");
+-        // italic
+-			msg = msg.replace(/&i\t/g,	"<i>" );
+-			msg = msg.replace(/&\/i\t/g,"</i>");
+-        // underline
+-			msg = msg.replace(/&u\t/g,	"<u>" );
+-			msg = msg.replace(/&\/u\t/g,"</u>");
+-        // strike
+-			msg = msg.replace(/&s\t/g,	"<s>") ;
+-			msg = msg.replace(/&\/s\t/g,"</s>");
+-        // paragraph
+-			msg = msg.replace(/&p\t/g,	"<p>" );
+-			msg = msg.replace(/&\/p\t/g,"</p>");
+-        // break
+-			msg = msg.replace(/&br\t/g,"<br/>");
+-        //li
+-			msg = msg.replace(/&li\t/g,	 "<li>" );
+-			msg = msg.replace(/&\/li\t/g,"</li>");
+-        //ul
+-			msg = msg.replace(/&ul\t/g,	 "<ul>" );
+-			msg = msg.replace(/&\/ul\t/g,"</ul>");
+-        //ol
+-			msg = msg.replace(/&ol\t/g,	 "<ol>" );
+-			msg = msg.replace(/&\/ol\t/g,"</ol>");
+-        // subscript
+-			msg = msg.replace(/&sub\t/g,	"<sub>" );
+-			msg = msg.replace(/&\/sub\t/g,	"</sub>");
+-        // superscript
+-			msg = msg.replace(/&sup\t/g,	"<sup>" );
+-			msg = msg.replace(/&\/sup\t/g,	"</sup>");
+-        // code
+-			msg = msg.replace(/&code\t/g,	"<code>" );
+-			msg = msg.replace(/&\/code\t/g, "</code>");
+-        // bcode
+-			msg = msg.replace(/&bcode\t/g,	"<bcode>" );
+-			msg = msg.replace(/&\/bcode\t/g,"</bcode>");
+-		// deviant
+-			msg = msg.replace(/&dev\t([^\t])\t([^\t]+)\t/g,':dev$2:');
+-        // link no description
+-			msg = msg.replace(/&link\t([^\t]+)\t&/g,'$1');
+-        // link with description
+-			msg = msg.replace(/&link\t([^\t]+)\t([^\t]+)\t&\t/g,'$1 \($2\)');
+-        // abbr
+-			msg = msg.replace(/&abbr\t([^\t]+)\t/g,'<abbr title="$1">');
+-			msg = msg.replace(/&\/abbr\t/g,"</abbr>");
+-        // acronym
+-			msg = msg.replace(/&acro\t([^\t]+)\t/g,'<acronym title="$1">');
+-			msg = msg.replace(/&\/acro\t/g,"</acronym>");
+-        // anchor
+-			msg = msg.replace(/&a\t([^\t]+)\t([^\t]*)\t/g,'<a href="$1" title="$2">');
+-        // avatar
+-			msg = msg.replace(/&avatar\t([^\t]+)\t([^\t]+)\t/g,':icon$1:');
+-        // img
+-        	msg = msg.replace(/&img\t([^\t]+)\t([^\t]*)\t([^\t]*)\t/g,'<image src="$1" />');
+-			msg = msg.replace(/&\/a\t/g,"</a>");
+-		// emote
+-			msg = msg.replace(/&emote\t([^\t]+)\t([^\t]+)\t([^\t]+)\t([^\t]+)\t([^\t]+)\t/g,'$1');
+-        // iframe
+-        	msg = msg.replace(/&iframe\t([^\t]+)\t([^\t]*)\t([^\t]*)\t/g,'<iframe href="$1" height="$2" width="$3" />');
+-        // thumbnail
+-			msg = msg.replace(/&thumb\t([^\t]+)\t([^\t]+)\t([^\t]+)\t([^\t]+)\t([^\t]+)\t([^\t]+)\t([^\t]+)\t/g,':thumb$1:');
+-
+-        return msg;
+-    },
+-
+-    updateMethods: function(){
+-		dAmnChat_onData_MM 	= dAmnChat_onData;
+-		dAmnChat_onData 	= function (pkt)
+-		{
+-			try{
+-                pkt = MiddleMan.dAmnEvents.onData(pkt) ? MiddleMan.dAmnEvents.onData(pkt) : pkt;
+-				this.onData_MM(pkt);
+-			}catch(ex){	MiddleMan.errorMsg(ex,"dAmnChat_onData",pkt); }
+-		};
+-		dAmnChat_onClose_MM = dAmnChat_onClose;
+-		dAmnChat_onClose 	= function()
+-		{
+-			try{
+-				MiddleMan.dAmnEvents.onClose();
+-				this.onClose_MM();
+-			}catch(ex){	MiddleMan.errorMsg(ex,"dAmnChat_onClose",''); }
+-		};
+-		dAmnChat_onResize_MM = dAmnChat_onResize;
+-		dAmnChat_onResize 	 = function(real)
+-		{
+-			try{
+-				var _real = MiddleMan.dAmnEvents.onResize(real);
+-				real=_real?_real:real;
+-				this.onResize_MM(real);
+-			}catch(ex){	MiddleMan.errorMsg(ex,"dAmnChat_onResize",real); }
+-
+-		};
+-		dAmnChat_onDisconnect_MM = dAmnChat_onDisconnect;
+-		dAmnChat_onDisconnect 	 = function(reason)
+-		{
+-			try{
+-				var _reason = MiddleMan.dAmnEvents.onDisconnect(reason);
+-				reason=_reason?_reason:reason;
+-				this.onDisconnect_MM(reason);
+-			}catch(ex){	MiddleMan.errorMsg(ex,"dAmnChat_onDisconnect",reason); }
+-		};
+-		dAmnChat_onShutdown_MM 	= dAmnChat_onShutdown;
+-		dAmnChat_onShutdown 	= function()
+-		{
+-			try{
+-				MiddleMan.dAmnEvents.onShutdown();
+-				this.onShutdown_MM();
+-			}catch(ex){	MiddleMan.errorMsg(ex,"dAmnChat_onShutdown",pkt); }
+-		};
+-		dAmnChat_Send_MM = dAmnChat_Send;
+-		dAmnChat_Send 	 = function(cmd, channel, str)
+-		{
+-			try{
+-				var args = {"cmd":cmd, "channel":channel, "str":str};
+-                args = MiddleMan.dAmnEvents.onSend(args);
+-				this.Send_MM(args.cmd, args.channel, args.str);
+-			}catch(ex){	MiddleMan.errorMsg(ex,"dAmnChat_Send",pkt); }
+-		};
+-
+-		dAmnChanChat.prototype.makeText_MM 	= dAmnChanChat.prototype.makeText;
+-		dAmnChanChat.prototype.makeText 	= function( style, from, text, hilite )
+-		{
+-			try{
+-				var args = {"style":style, "from":from, "text":text, "hilite":hilite};
+-				//	args = MiddleMan.dAmnEvents.onMakeText(this.channel.name,args);
+-
+-				this.makeText_MM(args.style, args.from, args.text, args.hilite);
+-
+-			}catch(ex){	MiddleMan.errorMsg(ex,"dAmnChanChat.prototype.makeText",args); }
+-		};
+-
+-		dAmnChanChat.prototype.Clear_MM = dAmnChanChat.prototype.Clear;
+-		dAmnChanChat.prototype.Clear 	= function()
+-		{
+-			try{
+-				MiddleMan.dAmnEvents.onClear();
+-				this.Clear_MM();
+-			}catch(ex){	MiddleMan.errorMsg(ex,"dAmnChanChat.prototype.Clear",''); }
+-		};
+-
+-		dAmnChatTabs_activate_MM = dAmnChatTabs_activate;
+-		dAmnChatTabs_activate 	 = function( id , real )
+-		{
+-			dAmnChatTabs_activate_MM(id, real);
+-			MiddleMan.dAmnEvents.onTabActivate([id, real]);
+-		};
+-
+-		dAmnChatInput_onKey_MM 	= dAmnChatInput_onKey;
+-		dAmnChatInput_onKey 	= function(e,kc,force)
+-		{
+-			var dummy;
+-			MiddleMan.dAmnEvents.onKey(e,kc,force);
+-
+-			var el = this.chatinput_el;
+-			if(kc != 9){
+-				dAmnChatTabs_activate( this.cr.ns, true );
+-				delete this.tablist;
+-				if (kc == 13 && ( force || !this.multiline || e.shiftKey || e.ctrlKey ) && el.value){
+-					if(e.shiftKey || (!this.multiline && e.ctrlKey)) { dummy = null; }
+-					else{
+-
+-						var cmdre = el.value.match( /^\/([a-z]+)([\s\S]*)/m );
+-						if (!cmdre) { dummy = null; }
+-						else {
+-							var cmd  = cmdre[1].toLowerCase();
+-							var args = null;
+-							if (cmdre[2]) {
+-								var tmp = cmdre[2].match(/^\s([\s\S]*)/);
+-								if( tmp && tmp.length )
+-									args = tmp[1];
+-							}
+-
+-							if (!this.cmds[cmd]) {  dummy = null; }
+-							else if( this.cmds[cmd][1] == "MiddleMan") {
+-								if( this.cmds[cmd][0]) {
+-									if (args)  MiddleMan.Commands.trigger(cmd,args);
+-								} else {
+-									MiddleMan.Commands.trigger(cmd,false);
+-								}
+-								el.value='';
+-								el.focus();
+-							}
+-						}
+-					}
+-				}
+-                            // This is needed to store the commands in memory
+-			if (this.history_pos != -1  && this.history[this.history_pos] == el.value) { // posting from history.. move to the end
+-				var before = this.history.slice(0,this.history_pos);
+-				var after  = this.history.slice(this.history_pos+1);
+-				this.history = before.concat(after).concat( this.history[this.history_pos] );
+-			} else {
+-				// add to history -- limit to 300
+-				this.history = this.history.concat( el.value );
+-				if( this.history.length > 300 )
+-					this.history = this.history.slice(1);
+-			}
+-			this.history_pos = -1;
+-
+-            }
+-
+-
+-
+-			return this.onKey_MM(e,kc,force);
+-		};
+-
+-		dAmnChanChat.prototype.Init_MM 	= dAmnChanChat.prototype.Init;
+-		dAmnChanChat.prototype.Init 	= function( cr, name, parent_el ){
+-			this.Init_MM( cr, name, parent_el );
+-			for(var cmd in MiddleMan.Commands.commands){
+-				this.input.cmds[cmd] = MiddleMan.Commands.forDAmn(cmd);
+-			}
+-            setTimeout(function(){
+-                MiddleMan.dAmnEvents.onInit(cr,name,parent_el);
+-            }, 10);
+-		};
+-
+-		dAmnChat.prototype.Send       			= dAmnChat_Send;
+-		dAmnChat.prototype.onData       		= dAmnChat_onData;
+-		dAmnChat.prototype.onClose       		= dAmnChat_onClose;
+-		dAmnChat.prototype.onResize       		= dAmnChat_onResize;
+-		dAmnChatInput.prototype.onKey 			= dAmnChatInput_onKey;
+-		dAmnChat.prototype.onShutdown       	= dAmnChat_onShutdown;
+-		dAmnChat.prototype.onDisconnect       	= dAmnChat_onDisconnect;
+-		dAmnChat.prototype.Send_MM    			= dAmnChat_Send_MM;
+-		dAmnChat.prototype.onData_MM    		= dAmnChat_onData_MM;
+-		dAmnChat.prototype.onClose_MM    		= dAmnChat_onClose_MM;
+-		dAmnChat.prototype.onResize_MM    		= dAmnChat_onResize_MM;
+-		dAmnChatInput.prototype.onKey_MM 		= dAmnChatInput_onKey_MM;
+-		dAmnChat.prototype.onShutdown_MM    	= dAmnChat_onShutdown_MM;
+-		dAmnChat.prototype.onDisconnect_MM    	= dAmnChat_onDisconnect_MM;
+-
+     }
+ };
+-MiddleMan.init();
+ 
+ //Outro
+ })();
+-
+-//} // End with(unsafeWindow){...}
+Index: Readme
+===================================================================
+--- Readme	(revision 139)
++++ Readme	(revision 85)
+@@ -7,7 +7,7 @@
+  = About =
+ 
+     This Is an Extension to dAmn, providing developers
+-    with a easy and friendly way to modify and extend dAmn.
++    with a easy and friendly way to modify dAmn.
+ 
+     It was first Created by Sumopiggy (Sam), and then
+     made into a collaboration with Miksago (Micheil).
+
+Property changes on: 
+___________________________________________________________________
+Name: svn:externals
+   - E:\var\svn\dAmn MiddleMan https://damn-middleman.googlecode.com/svn
+
+
