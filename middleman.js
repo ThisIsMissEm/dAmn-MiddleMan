@@ -29,7 +29,7 @@ var MiddleMan = window.MiddleMan = {
     init: function(){
 		this.updateMethods();
 		this.loaded = true;
-		
+
 		this.appendInlineStyles(  ".dockrocker_MM .popup2_MM{ display:none; width: auto; height: auto; right: 0px; } "
 								+ ".dockrocker_MM:hover .popup2_MM{ display:block; }"
 								+ ".dockrocker_MM .popup2_MM .f{ text-indent: 0px; padding: 2px 18px; }"
@@ -93,6 +93,13 @@ var MiddleMan = window.MiddleMan = {
 
 		return object;
 	},
+    serialize: function(a){
+        var s = [];
+        if(a.constructor != Array)
+            for( var j in a )
+                s.push(encodeURIComponent( j ) + "=" + encodeURIComponent( a[j] ) );
+        return s.join("&").replace(/%20/g, "+");
+    },
 
 
 
@@ -128,6 +135,54 @@ var MiddleMan = window.MiddleMan = {
     	if("string" == typeof elementRef) elementRef = document.getElementById(elementRef);
     	if(!elementRef) return false;
 		try{ elementRef.parentNode.removeChild(elementRef); }catch(ex){ this.errorMsg(ex,"MiddleMan.removeElement",elementRef); }
+    },
+
+
+    ajaxSettings: {
+        type: "GET",
+        contentType: "application/x-www-form-urlencoded",
+        data: null,
+        processData: true
+    },
+    ajax: function(s){
+        s = this.extend(s, jLib.ajaxSettings);
+
+        if(s.data && s.processData && typeof s.data != "string")
+            s.data = this.serialize(s.data);
+        // append data to url if avaliable for GET requests
+        if(s.data && s.type.toUpperCase() == "GET"){
+            s.url += (s.url.match(/\?/) ? "&" : "?") + s.data;
+            s.data = null;
+        }
+
+        var xml = new XMLHttpRequest();
+
+        xml.open(s.type.toUpperCase(), s.url, s.async)
+        if(s.headers){
+            for(var i in s.headers){
+                if(i != "Content-Type"){
+                    xml.setRequestHeader(i, s.headers[i]);
+                }
+            }
+        }
+        //set the correct header, if data is being sent.
+        if(s.data)
+            xml.setRequestHeader("Content-Type", s.contentType);
+
+        xml.send(s.data);
+        var responseState = {
+     	    responseText: xml.responseText,
+     	    readyState:   xml.readyState,
+     	    responseHeaders:(xml.readyState == 4 ?
+     	                     xml.getAllResponseHeaders() :
+     	                     ''),
+     	    status:(xml.readyState == 4 ? xml.status : 0),
+     	    statusText:(xml.readyState == 4 ? xml.statusText : ''),
+     	    finalUrl:(xml.readyState == 4 ? xml.channel.URI.spec : '')
+        }
+
+        xml.onreadystatechange = s.onreadystatechange(responseState);
+        return xml;
     },
 
 
@@ -515,7 +570,7 @@ var MiddleMan = window.MiddleMan = {
     		node.style.right = pos+"px";
     		node.style.textIndent = "0px";
     		node.style.paddingLeft = node.style.paddingRight = "12px";
-    		
+
     		document.getElementById('top-deviant').appendChild(node);
     	},
     	addMenu: function(menuId,buttonId,menuContents){
@@ -523,10 +578,10 @@ var MiddleMan = window.MiddleMan = {
     		var node 	 	 = document.createElement('div');
     		node.id 	 	 = menuId;
     		node.className 	 = "popup2 popup2-click-menu popup2_MM";
-    		
+
     		var inner		 = document.createElement('div');
     		inner.className  = "pager2 pager-dark";
-    		
+
     		if("object" == typeof menuContents){
 				for(var i in menuContents){
 					var menuLink 		= document.createElement('a');
@@ -538,9 +593,9 @@ var MiddleMan = window.MiddleMan = {
     		}else{
     			inner.innerHTML = menuContents;
     		}
-    		
+
     		node.appendChild(inner);
-    		
+
     		if(buttonEl){
     			buttonEl.appendChild(node);
     			buttonEl.onclick = "";
