@@ -93,13 +93,6 @@ var MiddleMan = window.MiddleMan = {
 
 		return object;
 	},
-    serialize: function(a){
-        var s = [];
-        if(a.constructor != Array)
-            for( var j in a )
-                s.push(encodeURIComponent( j ) + "=" + encodeURIComponent( a[j] ) );
-        return s.join("&").replace(/%20/g, "+");
-    },
 
 
 
@@ -135,67 +128,6 @@ var MiddleMan = window.MiddleMan = {
     	if("string" == typeof elementRef) elementRef = document.getElementById(elementRef);
     	if(!elementRef) return false;
 		try{ elementRef.parentNode.removeChild(elementRef); }catch(ex){ this.errorMsg(ex,"MiddleMan.removeElement",elementRef); }
-    },
-
-
-    ajaxSettings: {
-        type: "GET",
-        contentType: "application/x-www-form-urlencoded",
-        data: null,
-        processData: true
-    },
-    ajaxLastModified: {},
-    ajax: function(s){
-        s = this.extend(s, this.ajaxSettings);
-
-        if(s.data && s.processData && typeof s.data != "string")
-            s.data = this.serialize(s.data);
-        // append data to url if avaliable for GET requests
-        if(s.data && s.type.toUpperCase() == "GET"){
-            s.url += (s.url.match(/\?/) ? "&" : "?") + s.data;
-            s.data = null;
-        }
-
-        var xml = new XMLHttpRequest();
-
-      	// Open the socket
-       	xml.open(s.type, s.url, s.async, s.username, s.password);
-        try{
-            if(s.headers){
-                for(var i in s.headers){
-                    if(i != "Content-Type"){
-                        xml.setRequestHeader(i, s.headers[i]);
-                    }
-                }
-            }
-            // Set the If-Modified-Since header, if ifModified mode.
-			if ( s.ifModified )
-				xml.setRequestHeader("If-Modified-Since",
-					jQuery.lastModified[s.url] || "Thu, 01 Jan 1970 00:00:00 GMT" );
-                
-			// Set header so the called script knows that it's an XMLHttpRequest
-			xml.setRequestHeader("X-Requested-With", "XMLHttpRequest");
-
-			// Set the Accepts header for the server, depending on the dataType
-			xml.setRequestHeader("Accept", s.dataType && s.accepts[ s.dataType ] ?
-				s.accepts[ s.dataType ] + ", */*" :
-				s.accepts._default );
-        } catch(e){}
-
-        xml.send(s.data);
-        var responseState = {
-     	    responseText: xml.responseText,
-     	    readyState:   xml.readyState,
-     	    responseHeaders:(xml.readyState == 4 ?
-     	                     xml.getAllResponseHeaders() :
-     	                     ''),
-     	    status:(xml.readyState == 4 ? xml.status : 0),
-     	    statusText:(xml.readyState == 4 ? xml.statusText : ''),
-     	    finalUrl:(xml.readyState == 4 ? xml.channel.URI.spec : '')
-        }
-
-        xml.onreadystatechange = s.onreadystatechange(responseState);
-        return xml;
     },
 
 
