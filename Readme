@@ -1,17 +1,7 @@
-/*===================================================*
- *                                                   *
- *    Readme                                         *
- *                                                   *
-**==================================================*/
+## About
 
- = About =
+dAmn MiddleMan was a past project of Sam (sumopiggy/sammulqueen.nz) and Micheil (Miksago). It provides a simple pub/sub driven interface to the internals of the deviantART Message Networks' chat application.
 
-    This Is an Extension to dAmn, providing developers
-    with a easy and friendly way to modify and extend dAmn.
+The project was originally started by Sam, and then made into a collaboration with myself, where we introduced the pub/sub interface.
 
-    It was first Created by Sumopiggy (Sam), and then
-    made into a collaboration with Miksago (Micheil).
-
-= Etc =
-    We hope you have fun using this, we will provide
-    docs later in this document.
+We hope you have fun using this, and at this stage, we will not be providing docs for MiddleMan. Try reading the source code.
